@@ -4,25 +4,33 @@ import logo from './logo.jpg'
 const Info = () => {
     const auth = localStorage.getItem('user');
   return (
-    <div className='Register'>
-   
-        <div className='container emp-profile'>
-            <form method="post">
-                <div className='row'>
-                    <div className='col-md-4'>
-                        <img src={logo} alt = "emp" height = "120" width = "120"/>
+    <div className='Info'>
+
+                <div classname ="info-left">
+                    <div>
+                        <img src={logo} border-radius= "50px" alt = "emp" height = "120" width = "120"/>
                     </div>
 
-                    <div className='col-md-6'>
-                        <div className="profile-head">
+                        <div>
                             <h5>{JSON.parse(auth).fname} {JSON.parse(auth).lname}</h5>
                             <h6>Web Developer</h6>
                         </div>
-                    </div>
+
                 </div>
-            </form>
-        </div>
-        </div>
+                <div classname ="info-right">
+
+                        <div>
+                            <br/><br/><br/>
+                            <h6>Name : {JSON.parse(auth).fname} {JSON.parse(auth).lname}</h6>
+                            <h6>Phone : {JSON.parse(auth).phone}</h6>
+                            <h6>DOB : {JSON.parse(auth).dob}</h6>
+                            <h6>Email : {JSON.parse(auth).email}</h6>
+                              
+                        </div>
+                    
+                </div>
+            
+        </div>  
    
   )
 }

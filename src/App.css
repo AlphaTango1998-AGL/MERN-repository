@@ -54,6 +54,30 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.Info{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px; 
+  width: 50%;
+  background-color: rgb(235, 232, 232);
+  margin: auto;
+  position: absolute;
+  padding: 20px;
+  opacity: 0.9;
+
+  width:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info-left{
+  display: inline-block;
+  vertical-align: middle;
+}
+.info-right{
+  display: inline-block;
+  text-align: left;
+  
+}
+
 .nav{
 text-align: justify;
 width: 100%;
@@ -105,15 +129,14 @@ td{
 }
 
 .Regitable{
-
   display: flex;
   flex-direction: column;
   orientation: vertical;
   padding: 5px;
   width: 100%;
   }
-.textbox{
 
+.textbox{
   width: 100%;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -125,6 +148,7 @@ td{
   font-family: sans-serif;
   font-size: medium;
 }
+
 .button{
   background-color: #4CAF50;
   border: none;
@@ -178,4 +202,10 @@ td{
   border-radius: 50px;
   float: left;
   margin-bottom: 15px;
+}
+
+.tde{
+  padding: 8px;
+  align-items: center;
+  align-content: center;
 }
