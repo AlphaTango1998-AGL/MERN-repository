@@ -64,18 +64,19 @@
   position: absolute;
   padding: 20px;
   opacity: 0.9;
-
   width:auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .info-left{
   display: inline-block;
   vertical-align: middle;
 }
+
 .info-right{
   display: inline-block;
   text-align: left;
-  
+  vertical-align: left;
 }
 
 .nav{
