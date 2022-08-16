@@ -8,19 +8,19 @@ const Info = () => {
 
                 <div classname ="info-left">
                     <div>
-                        <img src={logo} border-radius= "50px" alt = "emp" height = "120" width = "120"/>
+                        <img src={logo} className='logo' alt = "emp" height = "120" width = "120"/>
                     </div>
 
                         <div>
                             <h5>{JSON.parse(auth).fname} {JSON.parse(auth).lname}</h5>
-                            <h6>Web Developer</h6>
+                           
                         </div>
 
                 </div>
                 <div classname ="info-right">
 
                         <div>
-                            <br/><br/><br/>
+                            
                             <h6>Name : {JSON.parse(auth).fname} {JSON.parse(auth).lname}</h6>
                             <h6>Phone : {JSON.parse(auth).phone}</h6>
                             <h6>DOB : {JSON.parse(auth).dob}</h6>

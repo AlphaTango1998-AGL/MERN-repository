@@ -21,7 +21,7 @@ const Nav = () => {
         <li><Link to="/info" style={{ textDecoration: 'none', color: 'white' }}>Info</Link></li>
         <li><Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>About</Link></li>
         <li><Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Contact</Link></li>
-        <li><Link to="/signup" onClick={logout} style={{ textDecoration: 'none', color: 'red' }}>Logout ({JSON.parse(auth).fname})</Link></li>
+        <li><Link to="/login" onClick={logout} style={{ textDecoration: 'none', color: 'red' }}>Logout ({JSON.parse(auth).fname})</Link></li> 
       </ul>
       :
       <ul className='nav-ui nav-ui-right'>
